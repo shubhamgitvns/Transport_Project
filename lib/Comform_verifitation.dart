@@ -36,7 +36,7 @@ class _Conform_verifitation_pageState extends State<Conform_verifitation_page> {
       decoration: BoxDecoration(
         //borderRadius: BorderRadius.circular(19),
         border: Border.all(color: borderColor),
-        
+          color: Colors.blue.shade200
       ),
     );
     return Scaffold(
