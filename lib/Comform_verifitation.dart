@@ -36,6 +36,7 @@ class _Conform_verifitation_pageState extends State<Conform_verifitation_page> {
       decoration: BoxDecoration(
         //borderRadius: BorderRadius.circular(19),
         border: Border.all(color: borderColor),
+        
       ),
     );
     return Scaffold(
@@ -66,6 +67,8 @@ class _Conform_verifitation_pageState extends State<Conform_verifitation_page> {
                       // Specify direction if desired
                       textDirection: TextDirection.ltr,
                       child: Pinput(
+                        //Boxes number
+                        length: 6,
                         controller: pinController,
                         focusNode: focusNode,
                         androidSmsAutofillMethod:
@@ -94,7 +97,7 @@ class _Conform_verifitation_pageState extends State<Conform_verifitation_page> {
                               margin: const EdgeInsets.only(bottom: 9),
                               width: 22,
                               height: 1,
-                              color: focusedBorderColor,
+                              color: Colors.indigo,
                             ),
                           ],
                         ),
@@ -142,7 +145,7 @@ class _Conform_verifitation_pageState extends State<Conform_verifitation_page> {
               ),
 
               const SizedBox(
-                height: 20,
+                height: 30,
               ),
 
               Row(
